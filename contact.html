@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet" />
+    <!-- poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+  <div class="main w-full overflow-hidden">
+
+  <div
+      id="menu"
+        class="w-full h-screen fixed top-0 left-0 z-[999999] bg-[#17161E] px-4 pt-6 pb-4 
+        flex flex-col gap-20 transition-transform duration-300 ease-out
+        -translate-y-full"
+      >
+        <div class="flex justify-between items-center">
+         <a href="./home.html">
+           <img src="./assets/images/moblogo.png" alt="" class="w-40" />
+         </a>
+          <img
+          id="menuCloseBtn"
+          src="./assets/images/closeIcon.svg" alt="" class="w-10" />
+        </div>
+        <div class="w-full flex flex-col justify-start items-center gap-4">
+          <a
+            href="./about.html"
+            class="text-[#FFFEF8] text-2xl afa font-semibold rounded-full px-6 py-2"
+            >About us</a
+          >
+          <a
+            href="./service.html"
+            class="text-[#FFFEF8] text-2xl afa font-semibold rounded-full px-6 py-2"
+            >Services</a
+          >
+          <a
+            href="./gallery.html"
+            class="text-[#FFFEF8] text-2xl afa font-semibold rounded-full px-6 py-2"
+            >Gallery</a
+          >
+          <a
+            href="./whychooseus.html"
+            class="text-[#FFFEF8] text-2xl afa font-semibold rounded-full px-6 py-2"
+            >Why choose us</a
+          >
+        </div>
+        <a href="./contact.html"
+        class="-mt-5 mx-auto ">
+          <button
+          class="uppercase w-fit px-4 py-2 bg-[#FFFEF8] text-[#E6222B]
+            afa rounded-full font-semibold"
+        >
+          Contact us right now.
+        </button>
+        </a>
+      </div>
+      <header
+        class="w-full flex justify-center items-center fixed top-0 left-0 z-[999] max-sm:px-4 max-sm:py-4
+        sm:p-4 sm:px-28"
+      >
+        <div
+          class="w-full flex justify-between items-center bg-[#FFFFFF] rounded-full px-2 sm:px-6 py-2 sm:py-6"
+        >
+          <a href="./home.html">
+            <img
+              src="./assets/images/logo.png"
+              alt=""
+              class="w-40 max-sm:hidden"
+            />
+          </a>
+          <a href="./home.html">
+            <img src="./assets/images/logo.png" alt="" class="sm:hidden w-20" />
+          </a>
+          <div
+            class="menu flex justify-start items-center gap-12 max-sm:hidden -ml-32"
+          >
+            <a
+              href="./about.html"
+              class="text-[##17161E] hover:border-b hover:border-[#E6222B] afa text-base"
+              >About us</a
+            >
+            <a
+              href="./service.html"
+              class="text-[##17161E] hover:border-b hover:border-[#E6222B] afa text-base"
+              >Services</a
+            >
+            <a
+              href="./gallery.html"
+              class="text-[##17161E] hover:border-b hover:border-[#E6222B] afa text-base"
+              >Gallery</a
+            >
+            <a
+              href="./whychooseus.html"
+              class="text-[##17161E] hover:border-b hover:border-[#E6222B] afa text-base"
+              >Why choose us</a
+            >
+          </div>
+        <div class="max-sm:flex  items-center">
+            <a href="./contact.html">
+            <div class="flex gap-1 sm:gap-2 items-center justify-end">
+              <div
+                class="w-8 sm:w-12 h-8 sm:h-12 rounded-full bg-[#E6222B] p-2 sm:p-3 flex justify-center items-center"
+              >
+                <img
+                  src="./assets/svgs/phone.svg"
+                  alt=""
+                  class="w-full h-full"
+                />
+              </div>
+              <div
+                class="flex flex-col justify-start items-start text-[##17161E] afa"
+              >
+                <h2
+                  class="text-[0.6rem] sm:text-sm font-semibold uppercase"
+                  style="line-height: 0.8"
+                >
+                  Contact Now <br />
+                  <span class="font-bold text-base sm:text-2xl"
+                    >(123) 222-3333</span
+                  >
+                </h2>
+              </div>
+            </div>
+          </a>
+           <div id="menuOpenBtn" class="w-10 h-10 sm:hidden">
+                <img
+                  src="./assets/svgs/hambuger.svg"
+                  alt=""
+                  class="w-full h-full"
+                />
+              </div>
+        </div>
+        </div>
+      </header>
+
+   
+
+      <!-- contact page -->
+      <div
+        class="w-full flex justify-between items-center flex-col pt-32 sm:pt-60 diagonal-bg text-white afa
+        pb-8">
+        <div
+          class="w-full h-full flex justify-between max-sm:flex-col max-sm:gap-6 max-sm:relative px-4 sm:px-28">
+          <div
+            class="flex flex-col justify-start items-center sm:items-start gap-8 footer-left  my-0 sm:my-auto">
+            <div
+              class="w-full flex flex-col items-center sm:items-start justify-center gap-4 sm:gap-8">
+              <h1
+                class="contactHeading text-5xl font-medium hidden sm:block"
+                style="line-height: 1.1">
+                Trusted<span class="font-bold text-[#E6222B]">
+                  Handyman & <br />
+                  Plumbing Services</span
+                >
+                in<br />
+                Charlotte & <br />
+                Nearby Areas
+              </h1>
+              <h1 class="contactHeading text-3xl font-medium text-center sm:hidden"
+                style="line-height: 1.1">
+                Trusted<span class="font-bold text-[#E6222B]">
+                  Handyman & <br />
+                  Plumbing Services</span
+                >
+                <br> in
+                Charlotte & <br />
+                Nearby Areas
+              </h1>
+              <p class="contactPara text-sm sm:text-base font-medium text-center sm:text-start">
+                Over years of experience solving
+                <span class="font-bold text-[#E6222B]"
+                  >plumbing <br />
+                  and handyman needs</span
+                >. Licensed, bonded, <br />
+                and insured.
+              </p>
+
+              <div class="contactPara bg-[#17161E] w-[60%] text-xs sm:text-base text-center ">
+                <p class="font-bold text-[#E6222B]">Working Hours: 9–5, Monday to Sunday</p>
+                <h1>
+                  Send us your message and we’ll get back to you as soon as
+                  possible.
+                </h1>
+              </div>
+
+              <div
+                class="sm:justify-start items-center gap-5 text-sm flex max-sm:flex-col max-sm:px-4">
+                <button
+                  class="contactBtn max-sm:w-[full] flex justify-start items-center px-4 sm:px-5 sm:text-sm bg-[#E6222B] py-3 text-white rounded-lg">
+                  Contact Us
+                </button>
+                <button class="contactBtn max-sm:w-full flex gap-3 sm:gap-1">
+                  <img
+                    src="./assets/svgs/phone.svg"
+                    alt=""
+                    class="w-4 sm:w-5" />
+                  Call (123) 222-3333
+                </button>
+              </div>
+            </div>
+          </div>
+          <form
+            action=""
+            class="contactForm flex w-full sm:w-[40%] flex-col text-white bg-[#17161e]/10 justify-start items-center px-5 py-8 rounded-3xl sm:rounded-[30px] gap-6 footer-form
+            backdrop-blur-xl border border-white/20">
+            <h2 class="contactFormTitle text-2xl sm:text-3xl font-bold text-center form-title">
+              Schedule Your
+              <span class="text-[#17161E] font-black">
+                Plumbing <br />
+                Service
+              </span>
+              Today!
+            </h2>
+            <div class="w-full flex flex-col justify-start items-start gap-5">
+              <div class="w-full flex flex-col form-input">
+                <label for="" class="font-light text-xs text-white"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  class="contactFormInput rounded-lg py-1 px-4 outline-none text-[#1F52A8]" />
+              </div>
+              <div class="w-full flex flex-col form-input">
+                <label for="" class="font-light text-xs Aljen text-white"
+                  >Phone Number</label
+                >
+                <input
+                  type="text"
+                  class="contactFormInput rounded-lg py-1 px-4 outline-none text-[#1F52A8]" />
+              </div>
+              <div class="w-full flex flex-col form-input">
+                <label for="" class="font-light text-xs Aljen text-white"
+                  >Service Type</label
+                >
+                <input
+                  type="text"
+                  class="contactFormInput rounded-lg py-1 px-4 outline-none text-[#1F52A8]" />
+              </div>
+
+              <div class="w-full flex flex-col form-input">
+                <label for="" class="font-light text-xs Aljen text-white"
+                  >City / Area</label
+                >
+                <input
+                  type="text"
+                  class="contactFormInput rounded-lg py-1 px-4 outline-none text-[#1F52A8]" />
+              </div>
+
+              <div class="w-full flex flex-col form-input">
+                <label for="" class="font-light text-xs Aljen text-white"
+                  >Message</label
+                >
+                <textarea
+                  type="text"
+                  rows="5"
+                  class="contactFormInput rounded-lg py-1 px-4 outline-none text-[#1F52A8]"></textarea>
+              </div>
+
+              <div class="flex items-center justify-center w-full px-4 ">
+                <h1
+                  class="text-white afa font-extralight capitalize text-base sm:text-xl text-center w-fit bg-[#17161E] rounded-full px-7 py-1 ">
+                  NOTE : We do not offer free estimates
+                </h1>
+              </div>
+              <button
+                class="contactFormButton w-fit mx-auto px-6 py-4 test-xs sm:text-sm Inter font-semibold bg-[#17161E] rounded-full hover:bg-white hover:text-[#E6222B] hover:font-black hover:shadow-xl transition duration-200 form-button z-10">
+                Phone Us Today
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="contactFooter relative">
+        <div class="bg-[#17161E] h-fit w-full pb-6 max-sm:px-4">
+          <div class="h-fit py-10 w-full sm:flex justify-between">
+            <div
+              class="h-full w-full sm:w-[37%] flex gap-5 flex-col justify-center items-center pt-20">
+              <img class="w-[60%]" src="./assets/svgs/footerlogo.svg" alt="" />
+              <p
+                class="text-xs sm:text-base Mont text-center text-white w-full sm:w-[80%]">
+                We provide professional and trustworthy plumbing solutions.
+              </p>
+            </div>
+            <div
+              class="pt-8 sm:pt-14 h-full w-full sm:w-[20%] flex flex-col justify-center max-sm:items-center">
+              <h1 class="Mont font-black text-sm sm:text-xl text-white">
+                Quick Links
+              </h1>
+              <p
+                class="text-[#FFFFFF] Mont text-xs sm:text-lg cursor-pointer font-normal">
+                Home
+              </p>
+              <p
+                class="text-white Mont text-xs sm:text-lg cursor-pointer font-normal">
+                About Us
+              </p>
+              <p
+                class="text-white Mont text-xs sm:text-lg cursor-pointer font-normal">
+                Services
+              </p>
+              <p
+                class="text-white Mont text-xs sm:text-lg cursor-pointer font-normal">
+                Gallery
+              </p>
+              <p
+                class="text-white Mont text-xs sm:text-lg cursor-pointer font-normal">
+                Contact
+              </p>
+            </div>
+            <div
+              class="h-full pt-8 sm:pt-14 w-full sm:w-[25%] flex flex-col justify-center items-center sm:items-start gap-8 sm:gap-4">
+              <div class="flex flex-col gap-2">
+                <div class="flex gap-2 items-center">
+                  <img
+                    class="w-[7%]"
+                    src="./assets/svgs/footerphone.svg"
+                    alt="" />
+                  <p class="text-white Mont uppercase sm:text-base text-xs">
+                    (123) 222-3333
+                  </p>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <img
+                    class="w-[7%]"
+                    src="./assets/svgs/footeremail.svg"
+                    alt="" />
+                  <p class="text-white Mont uppercase sm:text-base text-xs">
+                    info@yourdomain.com
+                  </p>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <img
+                    class="w-[7%]"
+                    src="./assets/svgs/footerclock.svg"
+                    alt="" />
+                  <p class="text-white Mont uppercase sm:text-base text-xs">
+                    Mon–Fri 9:00am–6:00pm
+                  </p>
+                </div>
+              </div>
+
+              <button
+                class="w-fit px-5 py-2 sm:py-2 flex justify-center items-center afa font-bold text-sm rounded-full bg-[#FFFEF8] text-[#E6222B] border-none uppercase">
+                Contact us right now.
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col sm:flex-row sm:px-28 max-sm:items-center justify-between max-sm:gap-2 py-16">
+            <p class="text-white text-xs Mont">
+              Privacy Policy | Your Privacy Choices
+            </p>
+            <p class="text-white text-[8px] max-sm:text-center Mont">
+              © 2025 JMC CONSTRUCTION AND REMODELING . All Rights Reserved.
+              <span class="text-[#E6222B] px-8">Web Design </span>Devoids 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./animation.js"></script>
+  </body>
+</html>

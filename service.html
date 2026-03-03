@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="main w-full overflow-hidden">
+       
+
+
+
+
+      
+       <div
+      id="menu"
+        class="w-full h-screen fixed top-0 left-0 z-[999999] bg-[#17161E] px-4 pt-6 pb-4 
+        flex flex-col gap-20 transition-transform duration-300 ease-out
+        -translate-y-full"
+      >
+        <div class="flex justify-between items-center">
+         <a href="./home.html">
+           <img src="./assets/images/moblogo.png" alt="" class="w-40" />
+         </a>
+          <img
+          id="menuCloseBtn"
+          src="./assets/images/closeIcon.svg" alt="" class="w-10" />
+        </div>
+        <div class="w-full flex flex-col justify-start items-center gap-4">
+          <a
+            href="./about.html"
+            class="text-[#FFFEF8]  text-2xl afa font-semibold rounded-full px-6 py-2"
+            >About us</a
+          >
+          <a
+            href="./service.html"
+            class="text-[#FFFEF8] bg-[#E6222B] text-2xl afa font-semibold rounded-full px-6 py-2"
+            >Services</a
+          >
+          <a
+            href="./gallery.html"
+            class="text-[#FFFEF8] text-2xl afa font-semibold rounded-full px-6 py-2"
+            >Gallery</a
+          >
+          <a
+            href="./whychooseus.html"
+            class="text-[#FFFEF8] text-2xl afa font-semibold rounded-full px-6 py-2"
+            >Why choose us</a
+          >
+        </div>
+        <a href="./contact.html"
+        class="-mt-5 mx-auto ">
+          <button
+          class="uppercase w-fit px-4 py-2 bg-[#FFFEF8] text-[#E6222B]
+            afa rounded-full font-semibold"
+        >
+          Contact us right now.
+        </button>
+        </a>
+      </div>
+      <header
+        class="w-full flex justify-center items-center fixed top-0 left-0 z-[999] max-sm:px-4 max-sm:py-4 sm:p-4 sm:px-28"
+      >
+        <div
+          class="w-full flex justify-between items-center bg-[#FFFFFF] rounded-full px-2 sm:px-6 py-2 sm:py-6"
+        >
+          <a href="./home.html">
+            <img
+              src="./assets/images/logo.png"
+              alt=""
+              class="w-40 max-sm:hidden"
+            />
+          </a>
+          <a href="./home.html">
+            <img src="./assets/images/logo.png" alt="" class="sm:hidden w-20" />
+          </a>
+          <div
+            class="menu flex justify-start items-center gap-12 max-sm:hidden -ml-32"
+          >
+            <a
+              href="./about.html"
+              class="text-[##17161E] hover:border-b hover:border-[#E6222B] afa text-base"
+              >About us</a
+            >
+            <a
+              href="./service.html"
+              class="text-[##17161E] border-b border-[#E6222B] afa text-base"
+              >Services</a
+            >
+            <a
+              href="./gallery.html"
+              class="text-[##17161E] hover:border-b hover:border-[#E6222B] afa text-base"
+              >Gallery</a
+            >
+            <a
+              href="./whychooseus.html"
+              class="text-[##17161E] hover:border-b hover:border-[#E6222B] afa text-base"
+              >Why choose us</a
+            >
+          </div>
+        <div class="max-sm:flex  items-center">
+            <a href="./contact.html">
+            <div class="flex gap-1 sm:gap-2 items-center justify-end">
+              <div
+                class="w-8 sm:w-12 h-8 sm:h-12 rounded-full bg-[#E6222B] p-2 sm:p-3 flex justify-center items-center"
+              >
+                <img
+                  src="./assets/svgs/phone.svg"
+                  alt=""
+                  class="w-full h-full"
+                />
+              </div>
+              <div
+                class="flex flex-col justify-start items-start text-[##17161E] afa"
+              >
+                <h2
+                  class="text-[0.6rem] sm:text-sm font-semibold uppercase"
+                  style="line-height: 0.8"
+                >
+                  Contact Now <br />
+                  <span class="font-bold text-base sm:text-2xl"
+                    >(123) 222-3333</span
+                  >
+                </h2>
+              </div>
+            </div>
+          </a>
+           <div id="menuOpenBtn" class="w-10 h-10 sm:hidden">
+                <img
+                  src="./assets/svgs/hambuger.svg"
+                  alt=""
+                  class="w-full h-full"
+                />
+              </div>
+        </div>
+        </div>
+      </header>
+
+
+
+
+      <!-- FIRST SIDE -->
+      <div
+        style="background-image: url('./assets/images/3sectionBg.png')"
+        class="bg-norepat bg-cover bg-top bg-[#CAE4EE]/40 bg-blend-multiply"
+      >
+        <!-- SECTION 1 -->
+        <div
+          class="h-fit sm:min-h-screen pt-28 sm:pt-32 flex justify-between items-start max-sm:flex-col max-sm:gap-6"
+        >
+          <div
+            class="flex flex-col justify-start items-start afa gap-4 sm:gap-6 w-full sm:w-fit sm:pl-40 sm:h-[90dvh] sm:pt-28 max-sm:px-6"
+          >
+            <h1
+              class="servicesHeroHeading text-6xl w-full font-bold text-[#17161E] max-sm:!leading-[0.8] max-sm:hidden"
+              style="line-height: 0.9"
+            >
+              Expert
+              <span class="max-sm:text-4xl text-[#E6222B]"
+                >Residential <br />Plumbing Services</span
+              >
+              in <br />
+              Charlotte, NC & Surrounding Areas
+            </h1>
+
+            <h1
+              class="servicesHeroHeading text-4xl w-full font-bold text-[#17161E] max-sm:!leading-[0.9] sm:hidden text-center"
+            >
+              Expert
+              <span class="max-sm:text-4xl text-[#E6222B]"
+                >Residential Plumbing Services</span
+              >
+              in Charlotte, NC & Surrounding Areas
+            </h1>
+          </div>
+          <div
+            class="w-full sm:w-fit h-fit sm:h-[90dvh] flex justify-end items-center relative overflow-visible"
+          >
+            <div
+              class="servicesHeroImage absolute top-[20%] right-0 w-[80%] rounded-l-[60px] h-[50%] bg-[#E6222B]"
+            ></div>
+            <img
+              src="./assets/images/servicePgaeusbjectobjectimage.png"
+              alt=""
+              class="servicesHeroImage heroSubject w-auto sm:w-full relative z-10 object-cover sm:scale-150 -mr-8"
+            />
+          </div>
+        </div>
+
+        <!-- SECTION 2 -->
+        <div class="w-full min-h-screen sm:px-20 afa pb-8 sm:-mt-36">
+          <div
+            class="w-full rounded-3xl p-4 max-sm:pt-6 sm:p-8 flex justify-start items-start relative max-sm:flex-col"
+          >
+            <div
+              class="servicesAbsoluteImg max-sm:hidden w-full h-full object-cover absolute top-0 left-0"
+            >
+              <img
+                src="./assets/images/bgcreative.png"
+                alt=""
+                class="w-full h-full"
+              />
+            </div>
+            <div
+              class="w-full sm:w-1/2 flex justify-between gap-12 items-start relative font-afa flex-col"
+            >
+              <p
+                class="servicesText1 ml-4 -mt-3 text-[0.90rem] font-normal text-[#FFFEF8] max-sm:hidden"
+              >
+                At Manuel Handyman & Remodeling, we understand that <br />
+                plumbing issues can disrupt your daily life. With over 6 years
+                <br />
+                of real experience as a trusted residential plumber in <br />
+                Charlotte, we are dedicated to providing fast, reliable, and
+                <br />
+                durable solutions for your home. Whether you are facing an
+                <br />
+                urgent leak or planning a necessary upgrade, our team is <br />
+                available 7 days a week (9 am – 5 pm) to ensure your <br />
+                home’s plumbing system runs smoothly. We pride ourselves <br />
+                on direct, honest service with no middlemen.
+              </p>
+
+              <p
+                class="servicesText1 text-sm font-normal text-[#17161E] sm:hidden text-center max-sm:font-bold"
+              >
+                At Manuel Handyman & Remodeling, we understand that plumbing
+                issues can disrupt your daily life. With over 6 years of real
+                experience as a trusted residential plumber in Charlotte, we are
+                dedicated to providing fast, reliable, and durable solutions for
+                your home. Whether you are facing an urgent leak or planning a
+                necessary upgrade, our team is available 7 days a week (9 am – 5
+                pm) to ensure your home’s plumbing system runs smoothly. We
+                pride ourselves on direct, honest service with no middlemen.
+              </p>
+
+              <div
+                class="sm:mt-5 w-full flex flex-col justify-start items-center sm:px-4 gap-8"
+              >
+                <div
+                  class="w-full sm:w-[90%] h-[50dvh] sm:h-[45dvh] rounded-xl sm:rounded-[30px] bg-blue-400 overflow-hidden"
+                >
+                  <img
+                    src="./assets/images/plaumberShank.png"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="flex justify-start items-start flex-col gap-5">
+                  <h2
+                    class="servicesText1 max-sm:w-full font-bold text-4xl sm:text-5xl max-sm:text-center"
+                  >
+                    Pipe Installation <br />
+
+                    & Replacement
+                  </h2>
+                  <div class="flex flex-col gap-4">
+                    <p class="servicesText1 font-bold text-base max-sm:text-center">
+                      Ensure the longevity and safety of your home's
+                      infrastructure <br />
+                      with professional installation services. We provide
+                      durable
+                      <br />
+                      solutions done right the first time.
+                    </p>
+                    <div
+                      class="w-full flex justify-between items-start gap-6 py-8 max-sm:flex-col"
+                    >
+                      <div class="w-full sm:w-1/2 flex flex-col gap-6">
+                        <div
+                          class="servicesBox w-full p-4 rounded-[20px] border border-[#17161E] bg-white/30 flex flex-col justify-start items-center sm:items-start gap-4"
+                        >
+                          <h3
+                            class="max-sm:text-center text-2xl text-[#17161E] font-bold leading-none"
+                          >
+                            Water Line <br />
+                            Installation & <br />
+                            Repair
+                          </h3>
+                          <p
+                            class="max-sm:text-center text-sm text-[#17161E] leading-[1.4] font-bold"
+                          >
+                            Reliable main water line <br />
+                            services.
+                          </p>
+                        </div>
+                        <div
+                          class="servicesBox w-full p-4 rounded-[20px] border border-[#17161E] bg-white/30 flex flex-col justify-start items-center sm:items-start gap-4"
+                        >
+                          <h3
+                            class="text-2xl max-sm:text-center text-[#17161E] font-bold leading-none"
+                          >
+                            Gas Line <br />
+                            Installation & <br />
+                            Repair
+                          </h3>
+                          <p
+                            class="text-sm max-sm:text-center text-[#17161E] leading-[1.4] font-bold"
+                          >
+                            Safe and code- <br />
+                            compliant gas piping for <br />
+                            appliances.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="w-full sm:w-1/2 flex flex-col gap-6">
+                        <div
+                          class="servicesBox w-full p-4 rounded-[20px] border border-[#17161E] bg-white/30 flex flex-col justify-start items-center sm:items-start gap-4"
+                        >
+                          <h3
+                            class="text-2xl max-sm:text-center text-[#17161E] font-bold leading-none"
+                          >
+                            Sump Pump <br />
+                            Installation & <br />
+                            Repair
+                          </h3>
+                          <p
+                            class="text-sm max-sm:text-center text-[#17161E] leading-[1.4] font-bold"
+                          >
+                            Protecting your <br />
+                            basement or crawlspace <br />
+                            from flooding.
+                          </p>
+                        </div>
+                        <div
+                          class="servicesBox w-full p-4 rounded-[20px] border border-[#17161E] bg-white/30 flex flex-col justify-start items-center sm:items-start gap-4"
+                        >
+                          <h3
+                            class="text-2xl max-sm:text-center text-[#17161E] font-bold leading-none"
+                          >
+                            Complete Pipe <br />
+                            Replacement
+                          </h3>
+                          <p
+                            class="text-sm max-sm:text-center text-[#17161E] leading-[1.4] font-bold"
+                          >
+                            Upgrading outdated <br />
+                            piping systems.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="servicesRightContent w-full sm:w-1/2 flex flex-col justify-start items-center sm:items-start max-sm:py-4 relative sm:pl-10 sm:pt-20 max-sm:bg-[#17161E] max-sm:rounded-xl max-sm:px-4"
+            >
+              <h2
+                class="servicesText1 max-sm:text-center text-4xl sm:text-5xl text-[#FFFEF8] font-bold max-sm:leading-none"
+              >
+                Repairs & <br />
+                Emergency <br />
+                Plumbing
+              </h2>
+              <p class="servicesText1 text-sm text-[#FFFEF8] max-sm:text-center max-sm:mt-4">
+                At Manuel Handyman & Remodeling, we understand that plumbing
+                issues can disrupt <br />
+                your daily life. With over 6 years of real experience as a
+                trusted residential plumber in <br />
+                Charlotte, we are dedicated to providing fast, reliable, and
+                durable solutions for your <br />
+                home. Whether you are facing an urgent leak or planning a
+                necessary upgrade, our <br />
+                team is available 7 days a week (9 am – 5 pm) to ensure your
+                home’s plumbing <br />
+                system runs smoothly. We pride ourselves on direct, honest
+                service with no <br />
+                middlemen.
+              </p>
+              <div
+                class="w-full flex justify-between items-start gap-6 py-8 max-sm:flex-col"
+              >
+                <div class="w-full sm:w-1/2 flex flex-col gap-6">
+                  <div
+                    class="servicesBox  w-full p-4 rounded-[20px] border border-white bg-white/10 flex flex-col justify-start items-center sm:items-start gap-4"
+                  >
+                    <h3
+                      class="max-sm:text-center text-2xl text-[#FFFEF8] font-bold leading-none"
+                    >
+                      Emergency
+                      <br />
+                      Plumbing
+                    </h3>
+                    <p
+                      class="max-sm:text-center text-sm text-[#FFFEF8] leading-[1.4] font-bold"
+                    >
+                      Fast response for urgent <br />
+                      situations, available 7 days <br />
+                      a week. (Keyword: <br />
+                      emergency plumbing <br />
+                      Charlotte)
+                    </p>
+                  </div>
+                  <div
+                    class="servicesBox w-full p-4 rounded-[20px] border border-white bg-white/10 flex flex-col justify-start items-center sm:items-start gap-4"
+                  >
+                    <h3
+                      class="text-2xl max-sm:text-center text-[#FFFEF8] font-bold leading-none"
+                    >
+                      Leak Detection & <br />
+                      Repair
+                    </h3>
+                    <p
+                      class="text-sm max-sm:text-center text-[#FFFEF8] leading-[1.4] font-bold"
+                    >
+                      Using advanced techniques <br />
+                      to locate hidden leaks and <br />
+                      fix them before they cause <br />
+                      major damage. (Keyword: <br />
+                      leak detection Charlotte)
+                    </p>
+                  </div>
+                  <div
+                    class="servicesBox w-full p-4 rounded-[20px] border border-white bg-white/10 flex flex-col justify-start items-center sm:items-start gap-4"
+                  >
+                    <h3
+                      class="text-2xl max-sm:text-center text-[#FFFEF8] font-bold leading-none"
+                    >
+                      Drain Cleaning & <br />
+                      Clogged Toilet <br />
+                      Service
+                    </h3>
+                    <p
+                      class="text-sm max-sm:text-center text-[#FFFEF8] leading-[1.4] font-bold"
+                    >
+                      Professional clearing of <br />
+                      stubborn blocks in sinks, <br />
+                      showers, and toilets to <br />
+                      restore proper flow. <br />
+                      (Keyword: drain cleaning <br />
+                      Charlotte NC)
+                    </p>
+                  </div>
+                </div>
+
+                <div class="w-full sm:w-1/2 flex flex-col gap-6">
+                  <div
+                    class="servicesBox w-full p-4 rounded-[20px] border border-white bg-white/10 flex flex-col justify-start items-center sm:items-start gap-4"
+                  >
+                    <h3
+                      class="text-2xl max-sm:text-center text-[#FFFEF8] font-bold leading-none"
+                    >
+                      Sewer Line Repair <br />
+                      & Replacement
+                    </h3>
+                    <p
+                      class="text-sm max-sm:text-center text-[#FFFEF8] leading-[1.4] font-bold"
+                    >
+                      diagnosing and fixing <br />
+                      compromised sewer lines.
+                    </p>
+                  </div>
+                  <div
+                    class="servicesBox w-full p-4 rounded-[20px] border border-white bg-white/10 flex flex-col justify-start items-center sm:items-start gap-4"
+                  >
+                    <h3
+                      class="text-2xl max-sm:text-center text-[#FFFEF8] font-bold leading-none"
+                    >
+                      Drain Camera <br />
+                      Inspection
+                    </h3>
+                    <p
+                      class="text-sm max-sm:text-center text-[#FFFEF8] leading-[1.4] font-bold"
+                    >
+                      Accurate visual diagnostics <br />
+                      to find the exact cause of <br />
+                      deep blockages.
+                    </p>
+                  </div>
+                  <div
+                    class="servicesBox w-full p-4 rounded-[20px] border border-white bg-white/10 flex flex-col justify-start items-center sm:items-start gap-4"
+                  >
+                    <h3
+                      class="text-2xl max-sm:text-center text-[#FFFEF8] font-bold leading-none"
+                    >
+                      Repiping Services
+                    </h3>
+                    <p
+                      class="text-sm max-sm:text-center text-[#FFFEF8] leading-[1.4] font-bold"
+                    >
+                      Replacing old, corroded <br />
+                      pipes with modern, durable <br />
+                      materials.
+                    </p>
+                  </div>
+
+                  <div
+                    class="servicesBox w-full p-4 rounded-[20px] border border-white bg-white/10 flex flex-col justify-start items-center sm:items-start gap-4"
+                  >
+                    <h3
+                      class="text-2xl max-sm:text-center text-[#FFFEF8] font-bold leading-none"
+                    >
+                      Backflow <br />
+                      Prevention
+                    </h3>
+                    <p
+                      class="text-sm max-sm:text-center text-[#FFFEF8] leading-[1.4] font-bold"
+                    >
+                      Ensuring your potable water <br />
+                      supply remains <br />
+                      uncontaminated.
+                    </p>
+                  </div>
+                </div>
+              </div>
+             <button
+                class="mx-auto mt-4 px-4 py-2 bg-[#FFFEF8] text-[#E6222B] uppercase afa rounded-full font-bold text-base sm:text-lg"
+              >
+               Contact us right now.
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 3 -->
+        <div
+          class="w-full flex justify-between items-center h-fit sm:h-[75dvh] px-4 sm:px-20 max-sm:flex-col gap-5 sm:gap-10 sm:mt-20"
+        >
+          <div
+            class="servicesCard relative h-[60dvh] sm:h-full w-full sm:w-[32%] rounded-xl sm:rounded-[30px] overflow-hidden pb-5 pl-5 bg-[linear-gradient(to_bottom,rgba(0,0,0,0),rgba(0,0,0,1)),url('./assets/images/servce-2.png')] bg-cover bg-center flex items-end"
+          >
+            <h1 class="afa text-[#FFFEF8] font-bold text-2xl sm:text-3xl z-10">
+             Bathroom Plumbing <br>
+              Solutions
+            </h1>
+          </div>
+          <div
+            class="servicesCard relative h-[60dvh] sm:h-full w-full sm:w-[32%] rounded-xl sm:rounded-[30px] overflow-hidden pb-5 pl-5 bg-[linear-gradient(to_bottom,rgba(0,0,0,0),rgba(0,0,0,1)),url('./assets/images/aboutimg4.png')] bg-cover bg-center flex items-end"
+          >
+            <h1 class="afa text-[#FFFEF8] font-bold text-2xl sm:text-3xl z-10">
+              Water Heater Services
+            </h1>
+          </div>
+          <div
+            class="servicesCard relative h-[60dvh] sm:h-full w-full sm:w-[32%] rounded-xl sm:rounded-[30px] overflow-hidden pb-5 pl-5 bg-[linear-gradient(to_bottom,rgba(0,0,0,0),rgba(0,0,0,1)),url('./assets/images/serve-2.png')] bg-cover bg-center flex items-end"
+          >
+            <h1 class="afa text-[#FFFEF8] font-bold text-2xl sm:text-3xl z-10">
+              Exterior Plumbing
+            </h1>
+          </div>
+        </div>
+      </div>
+      <!--SECOND SIDE  -->
+      <div class="w-full min-h-screen bg-[#e3f4ff] relative z-[30]">
+        <div class="w-full relative pt-20 sm:pt-24">
+          <img
+            src="./assets/images/Nature view.png"
+            alt=""
+            class="absolute top-0 left-0 min-h-screen sm:min-h-full max-sm:object-cover z-[20]"
+          />
+          <div class="absolute top-[-25%] left-0 max-sm:hidden z-[30]">
+            <img src="./assets/images/cloud-1.png" alt="" class="w-80
+            serviceProudCloud1" />
+          </div>
+          <div class="absolute top-[-25%] right-0 max-sm:hidden z-[30]
+          serviceProudCloud2">
+            <img src="./assets/images/cloud-2.png" alt="" class="w-80" />
+          </div>
+          <div
+            class="w-full h-fit flex flex-col gap-5 sm:gap-5 z-10 items-center justify-between relative z-[50]"
+          >
+            <h1
+              class="serviceProudHeading text-3xl sm:text-7xl afa text-[#17161E] font-bold text-center w-[80%] sm:w-[50%]"
+            >
+              Ready to
+              <span class="text-[#E6222B]">
+                Fix Your <br />
+                Plumbing Issues </span
+              >?
+            </h1>
+            <p
+              class="serviceProudPara text-[#17161E] text-xs sm:text-base afa font-bold text-center w-[70%] sm:w-[50%]"
+            >
+              We are a trusted resource for the wider region. Our professional
+              commitment extends well beyond city limits, bringing quality
+              plumbing solutions to all communities within a 60-mile radius.
+            </p>
+            <div
+              class="flex flex-col sm:flex-row items-center justify-center sm:gap-8"
+            >
+              <button
+                class="serviceProudContactBtn px-4 py-2 bg-[#FFFEF8] text-[#E6222B] uppercase afa rounded-full font-bold max-sm:text-sm"
+              >
+                Contact Us Now to Schedule Service
+              </button>
+              <div
+                class="serviceProudNeedHelp flex gap-1 sm:gap-2 items-center justify-end max-sm:hidden"
+              >
+                <div
+                  class="w-8 sm:w-12 h-8 sm:h-12 rounded-full bg-[#E6222B] p-2 sm:p-3 flex justify-center items-center"
+                >
+                  <img
+                    src="./assets/svgs/phone.svg"
+                    alt=""
+                    class="w-full h-full"
+                  />
+                </div>
+                <div
+                  class="flex flex-col justify-start items-start text-[##17161E] afa"
+                >
+                  <h2
+                    class="text-[0.6rem] sm:text-sm font-semibold uppercase"
+                    style="line-height: 0.8"
+                  >
+                    Contact Now <br />
+                    <span class="font-bold text-base sm:text-2xl"
+                      >(123) 222-3333</span
+                    >
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- reviews -->
+      <div
+        class="w-full h-fit relative px-4 sm:px-20 bg-[#e3f4ff] pb-16 max-sm:-mt-32 "
+      >
+        <div
+          class="h-fit w-full flex items-center justify-center sm:px-20 z-[50] relative"
+        >
+          <div
+            class="w-full h-fit bg-[#E6222B] rounded-lg sm:rounded-3xl flex sm:flex-row flex-col items-stretch"
+          >
+            <div
+              class="servicesBannerTextLeft w-full sm:w-[50%] h-full flex items-center justify-center pt-8 pb-4 sm:py-16 sm:pl-20"
+            >
+              <h1
+                class="afa text-[#FFFEF8] leading-1 text-4xl sm:text-6xl font-bold text-center"
+              >
+                Send us your<br />
+                message and we’ll <br />get back to you as <br />
+                soon as possible.
+              </h1>
+            </div>
+            <div
+              class="servicesBannerImgRight w-full sm:w-[50%] flex items-end justify-center relative"
+            >
+              <img
+                class="w-full sm:absolute bottom-0 right-0"
+                src="./assets/images/serviceBanner.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="pl-0 sm:pl-12 flex max-sm:items-center flex-col gap-2 pb-10 sm:pb-16 mt-6 sm:mt-12"
+        >
+          <h1
+            class="max-sm:text-center text-2xl sm:text-4xl font-medium Mont text-[#282525]"
+          >
+            What Our Clients Are Saying
+          </h1>
+          <div
+            class="flex items-center justify-between w-fit gap-2 max-sm:flex-col"
+          >
+            <img class="w-28" src="./assets/svgs/rating.svg" alt="" />
+            <h1 class="font-medium pop text-[#152418]">
+              5.0 rating of 12 reviews
+            </h1>
+          </div>
+        </div>
+
+        <div
+          class="w-full flex flex-col sm:flex-row justify-evenly items-center sm:items-stretch gap-4"
+        >
+          <!-- review1 -->
+          <div
+            class="servicesReviewCard  w-full sm:w-[30%] bg-[#F9FAFB] rounded-2xl flex flex-col items-center justify-between px-5 py-6 gap-2 sm:gap-3 border border-[#56545B]"
+          >
+            <div class="w-full h-fit flex flex-col items-start gap-4">
+              <img class="w-28" src="./assets/svgs/rating.svg" alt="" />
+              <img class="w-7" src="./assets/svgs/google.svg" alt="" />
+            </div>
+            <p
+              class="w-full h-fit text-xs sm:text-base leading-[1.3] Inter text-[#282525]"
+            >
+              The best service I’ve received in a long time! The team was
+              incredibly responsive, and their expertise was evident in the
+              final product. There was a small miscommunication initially, but
+              they quickly resolved it. I would definitely work with them again.
+            </p>
+            <div
+              class="w-full h-fit flex flex-col justify-between items-start gap-2"
+            >
+              <h1 class="Inter font-semibold text-lg sm:text-xl text-[#282525]">
+                Isabella Turner
+              </h1>
+              <p class="text-[#7C7C7C] Inter text-sm">Project Manager</p>
+              <img
+                class="w-8 sm:w-12 h-8 sm:h-12 rounded-full"
+                src="./assets/images/userprofile.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- review2 -->
+          <div
+            style="background-image: url(assets/images/reviewbg.png)"
+            class="relative servicesReviewCard  w-full sm:w-[30%] max-sm:h-[380px] bg-[#F9FAFB] rounded-2xl flex flex-col items-center justify-end px-5 py-6 gap-2 sm:gap-3 bg-img bg-cover bg-center flex-shrink-0 border border-[#56545B] bg-gradient-to-t from-red-800 to-transparent"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/30 rounded-2xl to-transparent"
+            ></div>
+            <div class="flex w-full justify-between">
+              <div
+                class="w-full h-fit flex flex-col justify-between items-start gap-4 z-10"
+              >
+                <img class="w-28" src="./assets/svgs/rating.svg" alt="" />
+
+                <div class="flex gap-3 items-center justify-between">
+                  <img
+                    class="w-8 sm:w-12 h-8 sm:h-12 rounded-full"
+                    src="./assets/images/userprofile3.png"
+                    alt=""
+                  />
+                  <div class="flex flex-col gap-1">
+                    <h1 class="text-[#FFFFFF] Inter text-lg">Henry Foster</h1>
+                    <p class="text-[#FFFFFF] Inter text-sm">Project Manager</p>
+                  </div>
+                </div>
+              </div>
+              <img class="w-8 mt-2" src="./assets/svgs/google.svg" alt="" />
+            </div>
+          </div>
+          <!-- review3 -->
+          <div
+            class="servicesReviewCard  w-full sm:w-[30%] bg-[#F9FAFB] rounded-2xl flex flex-col items-center justify-between px-5 py-6 gap-2 sm:gap-3 border border-[#56545B]"
+          >
+            <div class="w-full h-fit flex flex-col items-start gap-4">
+              <img class="w-28" src="./assets/svgs/rating.svg" alt="" />
+              <img class="w-7" src="./assets/svgs/google.svg" alt="" />
+            </div>
+            <p
+              class="w-full h-fit text-xs sm:text-base leading-[1.3] Inter text-[#282525]"
+            >
+              TThe marketing campaign they created for us was outstanding, and
+              we saw significant engagement. However, I wish they had provided
+              more frequent updates during the process. Overall, great work!
+              Highly recommended!
+            </p>
+            <div
+              class="w-full h-fit flex flex-col justify-between items-start gap-2"
+            >
+              <h1 class="Inter font-semibold text-lg sm:text-xl text-[#282525]">
+                Nathan Scott
+              </h1>
+              <p class="text-[#7C7C7C] Inter text-sm">CEO, Scott Enterprises</p>
+              <img
+                class="w-8 sm:w-12 h-8 sm:h-12 rounded-full"
+                src="./assets/images/userprofile2.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <div class="servicesFooter relative">
+        <div class="bg-black h-fit w-full pb-6 max-sm:px-4">
+          <div class="h-fit py-10 w-full sm:flex justify-between">
+            <div
+              class="h-full w-full sm:w-[37%] flex gap-5 flex-col justify-center items-center pt-20"
+            >
+              <img class="w-[60%]" src="./assets/svgs/footerlogo.svg" alt="" />
+              <p
+                class="text-xs sm:text-base Mont text-center text-white w-full sm:w-[80%]"
+              >
+                We provide professional and trustworthy plumbing solutions.
+              </p>
+            </div>
+            <div
+              class="pt-8 sm:pt-14 h-full w-full sm:w-[20%] flex flex-col justify-center max-sm:items-center"
+            >
+              <h1 class="Mont font-black text-sm sm:text-xl text-white">
+                Quick Links
+              </h1>
+              <p
+                class="text-[#FFFFFF] Mont text-xs sm:text-lg cursor-pointer font-normal"
+              >
+                Home
+              </p>
+              <p
+                class="text-white Mont text-xs sm:text-lg cursor-pointer font-normal"
+              >
+                About Us
+              </p>
+              <p
+                class="text-white Mont text-xs sm:text-lg cursor-pointer font-normal"
+              >
+                Services
+              </p>
+              <p
+                class="text-white Mont text-xs sm:text-lg cursor-pointer font-normal"
+              >
+                Gallery
+              </p>
+              <p
+                class="text-white Mont text-xs sm:text-lg cursor-pointer font-normal"
+              >
+                Contact
+              </p>
+            </div>
+            <div
+              class="h-full pt-8 sm:pt-14 w-full sm:w-[25%] flex flex-col justify-center items-center sm:items-start gap-8 sm:gap-4"
+            >
+              <div class="flex flex-col gap-2">
+                <div class="flex gap-2 items-center">
+                  <img
+                    class="w-[7%]"
+                    src="./assets/svgs/footerphone.svg"
+                    alt=""
+                  />
+                  <p class="text-white Mont uppercase sm:text-base text-xs">
+                    (123) 222-3333
+                  </p>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <img
+                    class="w-[7%]"
+                    src="./assets/svgs/footeremail.svg"
+                    alt=""
+                  />
+                  <p class="text-white Mont uppercase sm:text-base text-xs">
+                    info@yourdomain.com
+                  </p>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <img
+                    class="w-[7%]"
+                    src="./assets/svgs/footerclock.svg"
+                    alt=""
+                  />
+                  <p class="text-white Mont uppercase sm:text-base text-xs">
+                    Mon–Fri 9:00am–6:00pm
+                  </p>
+                </div>
+              </div>
+
+              <button
+                class="w-fit px-5 py-2 sm:py-2 flex justify-center items-center afa font-bold text-sm rounded-full bg-[#FFFEF8] text-[#E6222B] border-none uppercase"
+              >
+                Contact us right now.
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col sm:flex-row sm:px-28 max-sm:items-center justify-between max-sm:gap-2 py-16"
+          >
+            <p class="text-white text-xs Mont">
+              Privacy Policy | Your Privacy Choices
+            </p>
+            <p class="text-white text-[8px] max-sm:text-center Mont">
+              © 2025 JMC CONSTRUCTION AND REMODELING . All Rights Reserved.
+              <span class="text-[#E6222B] px-8">Web Design </span>Devoids 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./animation.js"></script>
+  </body>
+</html>

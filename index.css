@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.afa{
+    font-family: "Afacad" , sans-serif;
+}
+
+.Open{
+    font-family: "Open Sans" , sans-serif;
+}
+
+.Mont {
+    font-family: "Montserrat" ,sans-serif;
+}
+
+.Inter{
+    font-family: "Inter" ,sans-serif;
+}
+
+.pop {
+    font-family: "Poppins" , sans-serif;
+}
+
+
+
+.diagonal-bg {
+  background: linear-gradient(
+    135deg,
+    #17161e 0%,
+    #17161e 50%,
+    #e6222b 50%,
+    #e6222b 100%
+  );
+}
